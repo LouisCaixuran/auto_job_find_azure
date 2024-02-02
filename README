@@ -1,0 +1,15 @@
+本程序是一个自动化求职程序，主要是通过azure openai的api来生成打招呼信息，然后通过selenium来自动化投递简历到boss直聘上
+
+本程序来自https://github.com/Frrrrrrrrank/auto_job__find__chatgpt__rpa/blob/master/auto_job_find/write_response.py
+在此基础上进行了修改，主要是将openai的api改为了azure的openai api.如使用openai的api请参考原版。
+
+使用方法：
+1.clone本项目到本地
+2.在目录下运行 pip install -r requirements.txt 安装所需包
+3.配置好azure的api，将api的key，endpoint，version，deployment，填入到config.py中,并修改label为你主页存在的你想要遍历的职位的tag
+4.将想要投递的简历命名为“my_cover.pdf”，放入resume文件夹中
+5.运行write_response.py
+6.在自动打开的boss直聘中扫码登录
+
+注意提前关闭boss直聘账户中默认打招呼语句，否则会影响程序的运行
+
