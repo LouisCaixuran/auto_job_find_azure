@@ -22,7 +22,7 @@ def open_browser_with_options(url, browser):
     options = Options()
     options.add_experimental_option("detach", True)
 
-    if browser == "chrome":
+    if browser == BROSWER_TYPE:
         driver = webdriver.Chrome(options=options)
         driver.maximize_window()
     else:
